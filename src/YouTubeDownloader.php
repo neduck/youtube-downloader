@@ -144,7 +144,9 @@ class YouTubeDownloader
                     $return[] = array(
                         'url' => $item['url'],
                         'itag' => $itag,
-                        'format' => $parser->parseItagInfo($itag)
+                        'format' => $parser->parseItagInfo($itag),
+                        'width' => $item['width'] ?? null,
+                        'height' => $item['height'] ?? null,
                     );
 
                     continue;
@@ -163,7 +165,9 @@ class YouTubeDownloader
                 $return[] = array(
                     'url' => $url . '&' . $sp . '=' . $decoded_signature,
                     'itag' => $itag,
-                    'format' => $parser->parseItagInfo($itag)
+                    'format' => $parser->parseItagInfo($itag),
+                    'width' => $item['width'] ?? null,
+                    'height' => $item['height'] ?? null,
                 );
             }
 
