@@ -1,5 +1,5 @@
 {
-	"name": "neduck/youtube-downloader",
+	"name": "youvi/youtube-downloader",
 	"description": "PHP powered alternative for youtube-dl",
 	"keywords": ["youtube downloader", "download youtube", "download youtube videos"],
 	"license": "MIT",
